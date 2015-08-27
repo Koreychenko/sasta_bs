@@ -33,7 +33,7 @@
 // Links
 // -------------------------
 
-@link-color:            #b60000;
+@link-color:            @brand-primary;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
@@ -44,16 +44,16 @@
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          16px;
+@font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
-@font-size-h1:            floor(@font-size-base * 2);
-@font-size-h2:            floor(@font-size-base * 1.75);
-@font-size-h3:            ceil(@font-size-base * 1.5);
-@font-size-h4:            ceil(@font-size-base * 1.375);
-@font-size-h5:            ceil(@font-size-base * 1.375);
-@font-size-h6:            ceil(@font-size-base * 1.375);
+@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
 
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
@@ -116,12 +116,9 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #b60000;
+@btn-default-color:              #333;
 @btn-default-bg:                 #fff;
 @btn-default-border:             #ccc;
-@btn-default-font-weight:        bold;
-@btn-default-radius:             0px;
-
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -263,16 +260,16 @@
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
-@navbar-default-color:             #fff;
-@navbar-default-bg:                #007d2f;
+@navbar-default-color:             #777;
+@navbar-default-bg:                #f8f8f8;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #fff;
-@navbar-default-link-hover-color:          #fff;
-@navbar-default-link-hover-bg:             #b60000;
-@navbar-default-link-active-color:         #fff;
-@navbar-default-link-active-bg:            #b60000;
+@navbar-default-link-color:                #777;
+@navbar-default-link-hover-color:          #333;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #555;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -501,8 +498,6 @@
 @list-group-link-color:          #555;
 @list-group-link-heading-color:  #333;
 
-@list-style-image: url(../images/list-style-image.png);
-@list-style-position: inside;
 
 // Panels
 // -------------------------
@@ -640,6 +635,3 @@
 // Large screen / wide desktop
 @container-large-desktop:      ((1140px + @grid-gutter-width));
 @container-lg:                 @container-large-desktop;
-
-@main-red: #b60000;
-@main-green: #007d2f;

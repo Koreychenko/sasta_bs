@@ -1,5 +1,5 @@
-name = Sasta Bootstrap Theme
-description = A Bootstrap Sub-theme.
+name = Sastasoft Bootstrap Subtheme
+description = A Bootstrap Sub-theme for panels everywhere module.
 core = 7.x
 base theme = bootstrap
 
@@ -8,26 +8,25 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[header_contacts] = 'Header Contacts'
-regions[navigation]      = 'Navigation'
-regions[header]          = 'Top Bar'
-regions[highlighted]     = 'Highlighted'
-regions[help]            = 'Help'
-regions[slider]          = 'Slider'
-regions[content]         = 'Content'
-regions[sidebar_first]   = 'Primary'
-regions[sidebar_second]  = 'Secondary'
-regions[pre_footer]          = 'Pre Footer'
-regions[footer]          = 'Footer'
-regions[page_top]        = 'Page top'
-regions[page_bottom]     = 'Page bottom'
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
 
+plugins[panels][layouts] = templates/panels
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = less/style.less
+stylesheets[all][] = css/style.css
+stylesheets[all][] = less/sasta_bs.less
 
 
 ; For information on choosing the desired method, please read the Drupal
